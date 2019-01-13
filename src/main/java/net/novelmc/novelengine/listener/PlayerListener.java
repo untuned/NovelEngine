@@ -58,7 +58,7 @@ public class PlayerListener implements Listener
             }
 
             Bukkit.broadcastMessage(ChatColor.AQUA + player.getName() + " is " + Rank.getDisplay(player).getLoginMessage());
-            player.setPlayerListName(StringUtils.substring(Rank.getDisplay(player).getColor() + player.getName(), 0, 16));
+            player.setPlayerListName(StringUtils.substring(Rank.getDisplay(player).getTag() + " " + player.getName(), 0, 16));
         }
 
         if (ArchitectList.isArchitect(player) && !StaffList.isStaff(player))

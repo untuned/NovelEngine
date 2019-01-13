@@ -23,7 +23,7 @@ public enum Title implements Displayable
         this.determiner = determiner;
         this.name = name;
         this.color = color;
-        this.tag = color + "" + ChatColor.BOLD +  tag + ChatColor.RESET + color;
+        this.tag = color + "" + ChatColor.BOLD + tag + ChatColor.RESET + color;
     }
 
     public String getLoginMessage()
